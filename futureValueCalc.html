@@ -32,8 +32,30 @@
                 </div>
               </nav>
 
+              <section class="w-50 mx-auto">
+                <h1 class="my-3 text-center">Future Value Calculator</h1>
+                <form id="futureValueForm">
+                  <div class="my-3">
+                    <label for="deposit">Deposit</label>
+                    <input type="number" name="deposit" class="form-control" id="deposit">
+                  </div>
+                  <div class="my-3">
+                    <label for="interestRate">Interest Rate</label>
+                    <input type="number" step=".001" name="interestRate" class="form-control" id="interestRate">
+                  </div>
+                  <div class="my-3">
+                    <label for="years">Years</label>
+                    <input type="number" name="years" class="form-control" id="years">
+                  </div>
+                  <div id="results" class="my-3"></div>
+                  <button class="btn btn-primary" type="submit">Calculate Future Value</button>
+                  <button type="button" id="resetForm" class="btn btn-success">Reset Form</button>
+                </form>
+              </section>
+
             
             <!-- include our Bootstrap JS file -->
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> 
+            <script src="scripts/futureValueCalc.js"></script>
         </body>
 </html>
